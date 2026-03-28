@@ -41,7 +41,7 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <section id="skills" ref={ref} className="py-20 sm:py-32 px-4 sm:px-6 bg-surface/30">
+    <section id="skills" ref={ref} className="py-20 sm:py-20 px-4 sm:px-6 bg-surface/30">
       <div className="max-w-6xl mx-auto">
         <div className="section-animate flex items-center gap-3 mb-10 sm:mb-16">
           <span className="font-mono text-xs text-accent tracking-widest">02.</span>

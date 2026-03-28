@@ -29,7 +29,7 @@ export default function WorkSection() {
   const getLabel = (title: string) => title.split(" ").map((w) => w[0]).join("").toUpperCase();
 
   return (
-    <section id="work" ref={ref} className="py-20 sm:py-32 px-4 sm:px-6">
+    <section id="work" ref={ref} className="py-20 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="section-animate flex items-center gap-3 mb-8 sm:mb-10">
           <span className="font-mono text-xs text-accent tracking-widest">03.</span>
