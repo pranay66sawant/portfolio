@@ -21,11 +21,11 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Chen — Frontend Developer",
+  title: "Pranay Sawant — Frontend Developer",
   description:
     "Frontend developer with 2 years of experience crafting beautiful, performant web experiences.",
   openGraph: {
-    title: "Alex Chen — Frontend Developer",
+    title: "Pranay Sawant — Frontend Developer",
     description: "Frontend developer specializing in React, Next.js & modern web experiences.",
     type: "website",
   },
