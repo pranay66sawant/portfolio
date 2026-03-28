@@ -12,9 +12,7 @@ export default function AboutSection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.querySelectorAll(".section-animate").forEach((el) => {
-              el.classList.add("visible");
-            });
+            entry.target.querySelectorAll(".section-animate").forEach((el) => el.classList.add("visible"));
           }
         });
       },
@@ -25,101 +23,55 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="py-32 px-6">
+    <section id="about" ref={ref} className="py-20 sm:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Section label */}
-        <div className="section-animate flex items-center gap-3 mb-16">
+        <div className="section-animate flex items-center gap-3 mb-10 sm:mb-16">
           <span className="font-mono text-xs text-accent tracking-widest">01.</span>
-          <span className="font-mono text-xs text-muted tracking-widest uppercase">
-            About Me
-          </span>
-          <div className="flex-1 h-px bg-border max-w-xs" />
+          <span className="font-mono text-xs text-muted tracking-widest uppercase">About Me</span>
+          <div className="flex-1 h-px bg-border max-w-[100px] sm:max-w-xs" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24 items-center">
           <div>
-            <h2
-              className="section-animate font-display text-4xl sm:text-5xl font-black text-white leading-tight mb-8"
-              style={{ transitionDelay: "100ms" }}
-            >
+            <h2 className="section-animate font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6 sm:mb-8" style={{ transitionDelay: "100ms" }}>
               Turning ideas into{" "}
               <span className="text-accent">living, breathing</span>{" "}
               interfaces.
             </h2>
-            <p
-              className="section-animate font-body text-muted text-lg leading-relaxed mb-6"
-              style={{ transitionDelay: "200ms" }}
-            >
+            <p className="section-animate font-body text-muted text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6" style={{ transitionDelay: "200ms" }}>
               {personalInfo.bio}
             </p>
-            <p
-              className="section-animate font-body text-muted leading-relaxed mb-10"
-              style={{ transitionDelay: "250ms" }}
-            >
-              When I'm not coding, I'm studying design systems, contributing to
-              open source, or exploring the latest web animation techniques. I
-              believe great frontend work lives at the intersection of logic and
-              aesthetics.
+            <p className="section-animate font-body text-muted text-sm sm:text-base leading-relaxed mb-8 sm:mb-10" style={{ transitionDelay: "250ms" }}>
+              When I'm not coding, I'm studying design systems, contributing to open source, or exploring the latest web animation techniques.
             </p>
-
-            {/* Info chips */}
-            <div
-              className="section-animate flex flex-col gap-3"
-              style={{ transitionDelay: "300ms" }}
-            >
-              {[
-                { icon: MapPin, text: personalInfo.location },
-                { icon: Mail, text: personalInfo.email },
-                { icon: Calendar, text: "2 Years Experience" },
-              ].map(({ icon: Icon, text }) => (
+            <div className="section-animate flex flex-col gap-3" style={{ transitionDelay: "300ms" }}>
+              {[{ icon: MapPin, text: personalInfo.location }, { icon: Mail, text: personalInfo.email }, { icon: Calendar, text: "2 Years Experience" }].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">
-                  <Icon size={14} className="text-accent flex-shrink-0" />
-                  <span className="font-mono text-sm text-muted">{text}</span>
+                  <Icon size={13} className="text-accent flex-shrink-0" />
+                  <span className="font-mono text-xs sm:text-sm text-muted">{text}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Visual card */}
           <div className="section-animate" style={{ transitionDelay: "200ms" }}>
             <div className="relative">
-              {/* Decorative box */}
               <div className="absolute -inset-4 bg-gradient-to-br from-accent/10 to-transparent rounded-3xl blur-xl" />
-              <div className="relative bg-surface border border-border rounded-2xl p-8 gradient-border">
-                {/* Avatar placeholder */}
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 flex items-center justify-center mb-6">
-                  <span className="font-display text-3xl font-black text-accent">
-                    AC
-                  </span>
+              <div className="relative bg-surface border border-border rounded-2xl p-6 sm:p-8 gradient-border">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 flex items-center justify-center mb-5 sm:mb-6">
+                  <span className="font-display text-2xl sm:text-3xl font-black text-accent">AC</span>
                 </div>
-
-                <h3 className="font-display text-xl font-bold text-white mb-1">
-                  {personalInfo.name}
-                </h3>
-                <p className="font-mono text-xs text-accent mb-6">
-                  {personalInfo.role}
-                </p>
-
-                {/* Tech stack marquee */}
+                <h3 className="font-display text-lg sm:text-xl font-bold text-white mb-1">{personalInfo.name}</h3>
+                <p className="font-mono text-xs text-accent mb-5 sm:mb-6">{personalInfo.role}</p>
                 <div className="overflow-hidden relative">
-                  <p className="font-mono text-[10px] text-muted tracking-widest mb-3 uppercase">
-                    Tech Stack
-                  </p>
+                  <p className="font-mono text-[10px] text-muted tracking-widest mb-3 uppercase">Tech Stack</p>
                   <div className="flex gap-2 animate-marquee whitespace-nowrap">
                     {[...techStack, ...techStack].map((tech, i) => (
-                      <span
-                        key={i}
-                        className="inline-flex items-center px-3 py-1 bg-bg border border-border rounded-full text-xs font-mono text-muted flex-shrink-0"
-                      >
-                        {tech}
-                      </span>
+                      <span key={i} className="inline-flex items-center px-2.5 sm:px-3 py-1 bg-bg border border-border rounded-full text-[10px] sm:text-xs font-mono text-muted flex-shrink-0">{tech}</span>
                     ))}
                   </div>
                 </div>
-
-                {/* Availability */}
-                <div className="mt-6 pt-6 border-t border-border flex items-center justify-between">
+                <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-border flex items-center justify-between">
                   <span className="font-mono text-xs text-muted">Status</span>
                   <span className="flex items-center gap-2 font-mono text-xs text-accent">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
