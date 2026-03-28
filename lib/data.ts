@@ -6,10 +6,10 @@ export const personalInfo = {
   email: "pranaysawant2205@gmail.com",
   location: "Pune, India",
   availability: "Open to opportunities",
-  github: "https://github.com",
+  github: "https://github.com/pranay66sawant?tab=overview&from=2026-03-01&to=2026-03-17",
   linkedin: "https://linkedin.com",
   twitter: "https://twitter.com",
-  resume: "/resume.pdf",
+  resume: "/Pranay_Sawant_Frontend_Developer.pdf",
 };
 
 export const skills = {
