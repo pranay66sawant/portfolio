@@ -23,7 +23,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="py-20 sm:py-32 px-4 sm:px-6">
+    <section id="about" ref={ref} className="py-20 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="section-animate flex items-center gap-3 mb-10 sm:mb-16">
           <span className="font-mono text-xs text-accent tracking-widest">01.</span>
@@ -54,33 +54,61 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="section-animate" style={{ transitionDelay: "200ms" }}>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-accent/10 to-transparent rounded-3xl blur-xl" />
-              <div className="relative bg-surface border border-border rounded-2xl p-6 sm:p-8 gradient-border">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 flex items-center justify-center mb-5 sm:mb-6">
-                  <span className="font-display text-2xl sm:text-3xl font-black text-accent">AC</span>
-                </div>
-                <h3 className="font-display text-lg sm:text-xl font-bold text-white mb-1">{personalInfo.name}</h3>
-                <p className="font-mono text-xs text-accent mb-5 sm:mb-6">{personalInfo.role}</p>
-                <div className="overflow-hidden relative">
-                  <p className="font-mono text-[10px] text-muted tracking-widest mb-3 uppercase">Tech Stack</p>
-                  <div className="flex gap-2 animate-marquee whitespace-nowrap">
-                    {[...techStack, ...techStack].map((tech, i) => (
-                      <span key={i} className="inline-flex items-center px-2.5 sm:px-3 py-1 bg-bg border border-border rounded-full text-[10px] sm:text-xs font-mono text-muted flex-shrink-0">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-border flex items-center justify-between">
-                  <span className="font-mono text-xs text-muted">Status</span>
-                  <span className="flex items-center gap-2 font-mono text-xs text-accent">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                    {personalInfo.availability}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+         <div className="relative bg-surface border border-border rounded-2xl overflow-hidden gradient-border aspect-[4/4]">
+
+  {/* Background Image */}
+  <img
+    src="/pranay4.jpg"
+    alt="Profile"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  {/* Overlay (dark layer for readability) */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  {/* Content */}
+  <div className="relative p-6 sm:p-8 z-10 h-full flex flex-col justify-end">
+    
+    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 flex items-center justify-center mb-5 sm:mb-6 backdrop-blur">
+      <span className="font-display text-2xl sm:text-3xl font-black text-accent">&lt;/&gt;</span>
+    </div>
+
+    <h3 className="font-display text-lg sm:text-xl font-bold text-white mb-1">
+      {personalInfo.name}
+    </h3>
+
+    <p className="font-mono text-xs text-accent mb-5 sm:mb-6">
+      {personalInfo.role}
+    </p>
+
+    <div className="overflow-hidden relative">
+      <p className="font-mono text-[10px] text-white tracking-widest mb-3 uppercase">
+        Tech Stack
+      </p>
+
+      <div className="flex gap-2 animate-marquee whitespace-nowrap">
+        {[...techStack, ...techStack].map((tech, i) => (
+          <span
+            key={i}
+            className="inline-flex items-center px-2.5 sm:px-3 py-1 bg-bg/80 backdrop-blur border border-border rounded-full text-[10px] sm:text-xs font-mono text-accent-dim flex-shrink-0"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-border flex items-center justify-between">
+      <span className="font-mono text-xs text-white">Status</span>
+
+      <span className="flex items-center gap-2 font-mono text-xs text-accent">
+        <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+        {personalInfo.availability}
+      </span>
+    </div>
+
+  </div>
+</div>
         </div>
       </div>
     </section>
