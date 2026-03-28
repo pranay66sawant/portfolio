@@ -1,10 +1,10 @@
 export const personalInfo = {
-  name: "Alex Chen",
+  name: "Pranay Sawant",
   role: "Frontend Developer",
   tagline: "Crafting pixel-perfect interfaces that feel alive",
   bio: "I'm a frontend developer with 2 years of experience turning ideas into polished digital products. I love working at the intersection of design and code — building interfaces that are not just functional, but delightful.",
-  email: "alex.chen@email.com",
-  location: "San Francisco, CA",
+  email: "pranaysawant2205@gmail.com",
+  location: "Pune, India",
   availability: "Open to opportunities",
   github: "https://github.com",
   linkedin: "https://linkedin.com",
