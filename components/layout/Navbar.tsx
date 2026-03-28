@@ -49,15 +49,13 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <a
-            href="#"
-            className="font-display text-lg font-bold tracking-tight group"
-          >
-            <span className="text-white group-hover:text-accent transition-colors duration-300">
-              Alex
-            </span>
-            <span className="text-accent">.</span>
-          </a>
+          <a href="#" className="group flex items-center">
+  <img
+    src="/logo2.png"
+    alt="Pranay Logo"
+    className="h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+  />
+</a>  
 
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-8">
