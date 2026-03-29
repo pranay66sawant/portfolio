@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Pranay Sawant",
   role: "Frontend Developer",
   tagline: "Building scalable web applications with clean and efficient code",
-  bio: "I'm a frontend developer with 2+ years of experience building performant and user-focused web applications. I specialize in modern frontend technologies and also work across the stack to develop complete, production-ready products. Recently, I've been building real-world projects like a tourism platform, focusing on clean architecture, performance, and practical problem-solving.",
+  bio: "I'm a frontend developer with 2 years of experience building performant and user-focused web applications. I specialize in modern frontend technologies and also work across the stack to develop complete, production-ready products. Recently, I've been building real-world projects like a tourism platform, focusing on clean architecture, performance, and practical problem-solving.",
   email: "pranaysawant2205@gmail.com",
   location: "Pune, India",
   availability: "Open to opportunities",
@@ -136,9 +136,9 @@ export const experience = [
 
 export const stats = [
   { value: "2+", label: "Years Experience" },
-  { value: "15+", label: "Projects Shipped" },
-  { value: "8", label: "Happy Clients" },
-  { value: "94", label: "Avg Lighthouse Score" },
+  { value: "15+", label: "Projects Built" },
+  { value: "8+", label: "Production Deployments" },
+  { value: "100%", label: "Responsive Designs" },
 ];
 
 export const techStack = [
