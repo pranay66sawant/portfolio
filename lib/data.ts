@@ -42,7 +42,7 @@ export const projects = [
       "A real-time analytics dashboard with interactive charts, dark mode, and smooth animations built for SaaS products.",
     tech: ["Next.js", "TypeScript", "Tailwind", "Recharts"],
     category: "Full Stack",
-    image: "/pranay.jpg",
+    image: "/projects/pune.png",
     github: "https://github.com",
     live: "https://example.com",
     featured: true,
