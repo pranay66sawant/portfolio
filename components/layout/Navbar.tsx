@@ -61,7 +61,7 @@ export default function Navbar() {
           </ul>
 
           <a href="#contact" className="hidden md:flex items-center gap-2 bg-accent text-bg font-display text-sm font-bold px-5 py-2.5 rounded-full hover:bg-accent-dim transition-all duration-300 hover:scale-105">
-            Hire Me
+           Let’s Collaborate
           </a>
 
           <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
@@ -83,7 +83,7 @@ export default function Navbar() {
           ))}
           <li>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="mt-4 inline-flex bg-accent text-bg font-display text-lg font-bold px-8 py-3 rounded-full">
-              Hire Me
+             Let’s Collaborate
             </a>
           </li>
         </ul>
