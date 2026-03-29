@@ -58,7 +58,7 @@ export default function Navbar() {
 </a>   */}
  <a
             href="#"
-            className="font-display text-lg font-bold tracking-tight group"
+            className="font-display text-xl font-bold tracking-tight group"
           >
             <span className="text-white group-hover:text-accent transition-colors duration-300">
               Pranay
