@@ -37,7 +37,7 @@ export const skills = {
 export const projects = [
   {
     id: 1,
-    title: "Lumino Dashboard",
+    title: "Pune Tourism",
     description:
       "A real-time analytics dashboard with interactive charts, dark mode, and smooth animations built for SaaS products.",
     tech: ["Next.js", "TypeScript", "Tailwind", "Recharts"],
@@ -50,12 +50,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Moodboard Studio",
+    title: "Botree",
     description:
       "A drag-and-drop creative tool for designers to build visual moodboards with real-time collaboration features.",
     tech: ["React", "Framer Motion", "Zustand", "Supabase"],
     category: "Frontend",
-    image: "/pranay.jpg",
+    image: "/projects/botree.png",
     github: "https://github.com",
     live: "https://example.com",
     featured: true,
@@ -63,11 +63,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Evently",
+    title: "Live It Up",
     description:
       "Modern event management platform with ticketing, RSVPs, and beautiful landing pages for any event type.",
     tech: ["Next.js", "Tailwind", "Prisma", "PostgreSQL"],
-    category: "Full Stack",
+    category: "Frontend",
     image: "/pranay2.jpg",
     github: "https://github.com",
     live: "https://example.com",
@@ -76,7 +76,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "DevLinks",
+    title: "BJW Health",
     description:
       "A link-in-bio tool for developers. Customizable profiles with GitHub stats, tech stack badges, and project cards.",
     tech: ["Next.js", "TypeScript", "Tailwind", "MongoDB"],

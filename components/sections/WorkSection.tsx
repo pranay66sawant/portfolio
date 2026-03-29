@@ -67,7 +67,7 @@ export default function WorkSection() {
         {/* All cards — always 2 col on sm+, 1 col on mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {filtered.map((project, i) => (
-            <div key={project.id} className="section-animate group relative bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)] gradient-border" style={{ transitionDelay: `${200 + i * 100}ms` }}>
+            <div key={project.id} className="section-animate group relative bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500  hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)] gradient-border" style={{ transitionDelay: `${200 + i * 100}ms` }}>
 
               {/* Image area */}
               <div className={cn("h-52 sm:h-64 relative overflow-hidden bg-gradient-to-br", getPlaceholderGradient(project.id))}>
