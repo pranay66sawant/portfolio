@@ -78,7 +78,7 @@ export default function WorkSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-10">
-                  <a href={project.github} target="_blank" rel="noreferrer" className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-bg/80 backdrop-blur border border-border flex items-center justify-center text-white hover:text-accent transition-colors duration-200"><Github size={13} /></a>
+                  {/* <a href={project.github} target="_blank" rel="noreferrer" className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-bg/80 backdrop-blur border border-border flex items-center justify-center text-white hover:text-accent transition-colors duration-200"><Github size={13} /></a> */}
                   <a href={project.live} target="_blank" rel="noreferrer" className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-accent flex items-center justify-center text-bg hover:bg-white transition-colors duration-200"><ExternalLink size={13} /></a>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function WorkSection() {
         </div>
 
         <div className="section-animate text-center mt-8 sm:mt-12" style={{ transitionDelay: "500ms" }}>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-muted hover:text-accent transition-colors duration-300">
+          <a href="https://github.com/pranay66sawant?tab=overview&from=2026-03-01&to=2026-03-17" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-muted hover:text-accent transition-colors duration-300">
             View all projects on GitHub
             <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
