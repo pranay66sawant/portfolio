@@ -23,15 +23,12 @@ export const skills = {
   ],
   tools: [
     "Git & GitHub",
-    "Figma",
     "VS Code",
     "Vercel",
-    "Vite",
-    "ESLint",
     "Webpack",
-    "Storybook",
+    "Postman",
   ],
-  learning: ["Node.js", "GraphQL", "Three.js", "Docker"],
+  learning: ["Node.js", "Backend Architecture ", "API Design", "AWS"],
 };
 
 export const projects = [

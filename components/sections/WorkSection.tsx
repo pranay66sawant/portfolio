@@ -50,7 +50,7 @@ export default function WorkSection() {
 
         <div className="section-animate flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-12" style={{ transitionDelay: "100ms" }}>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white">
-            Projects I've <span className="text-accent">Shipped</span>
+            Projects I’ve  <span className="text-accent">Built</span>
           </h2>
           <div className="flex gap-2 flex-wrap">
             {categories.map((cat) => (
