@@ -5,7 +5,7 @@ import { personalInfo } from "@/lib/data";
 import { Send, Mail, Github, Linkedin, Check, Copy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const WHATSAPP_NUMBER = "919284442205";
+const WHATSAPP_NUMBER = "917722046322";
 
 export default function ContactSection() {
   const ref = useRef<HTMLElement>(null);
