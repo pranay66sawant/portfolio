@@ -26,7 +26,7 @@ export default function ExperienceSection() {
         </div>
 
         <h2 className="section-animate font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 sm:mb-16" style={{ transitionDelay: "100ms" }}>
-          Where I've <span className="text-accent">Worked</span>
+          Professional  <span className="text-accent">Journey</span>
         </h2>
 
         <div className="relative">

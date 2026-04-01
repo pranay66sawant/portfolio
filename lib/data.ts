@@ -87,48 +87,56 @@ export const projects = [
 ];
 
 export const experience = [
-  {
-    company: "PixelForge Studio",
-    role: "Frontend Developer",
-    period: "Jan 2024 – Present",
-    duration: "Current",
-    description:
-      "Building and maintaining high-performance React applications for enterprise clients. Led migration from CRA to Next.js, reducing load times by 40%.",
-    achievements: [
-      "Migrated legacy React app to Next.js 14 with App Router",
-      "Built reusable component library used across 3 products",
-      "Improved Lighthouse scores from 62 to 94",
-    ],
-    tech: ["Next.js", "TypeScript", "Tailwind", "Storybook"],
-  },
-  {
-    company: "Freelance",
-    role: "Frontend Developer",
-    period: "Jun 2023 – Dec 2023",
-    duration: "6 months",
-    description:
-      "Worked with startups and agencies to deliver responsive, animated landing pages and web apps under tight deadlines.",
-    achievements: [
-      "Delivered 8 client projects on time",
-      "Built e-commerce frontend with cart and checkout",
-      "Created design systems from Figma specs",
-    ],
-    tech: ["React", "Framer Motion", "SCSS", "JavaScript"],
-  },
-  {
-    company: "ByteBase Labs",
-    role: "Junior Frontend Intern",
-    period: "Jan 2023 – May 2023",
-    duration: "5 months",
-    description:
-      "Contributed to the company's main SaaS product, fixing bugs and shipping new UI features in a fast-paced agile environment.",
-    achievements: [
-      "Resolved 30+ UI bugs in production",
-      "Built new onboarding flow increasing user activation by 18%",
-      "Collaborated with designers in weekly design reviews",
-    ],
-    tech: ["React", "JavaScript", "Material UI", "REST APIs"],
-  },
+ {
+  company: "PixelForge Studio",
+  role: "Frontend Developer",
+  period: "Jan 2024 – Present",
+  duration: "Current",
+  description:
+    "Frontend Developer specializing in building scalable, high-performance web applications using Next.js and React. Focused on delivering responsive, user-centric interfaces with clean architecture and production-ready code.",
+  achievements: [
+    "Migrated a legacy React (CRA) application to Next.js 14 (App Router), improving performance and SEO",
+
+    "Developed a dynamic booking system for a Pune Tourism platform, enabling users to select destinations, view real-time slot availability, and complete bookings with database integration",
+
+    "Implemented slot management logic to track and update remaining availability in real-time, ensuring accurate booking flow",
+
+    "Built reusable and scalable UI components, improving development efficiency and consistency across projects",
+
+    "Designed responsive, cross-browser compatible interfaces for multiple client-facing applications",
+
+    "Collaborated with cross-functional teams to deliver production-ready features and improve overall code maintainability using TypeScript"
+  ],
+  tech: ["Next.js", "React", "TypeScript", "JavaScript","Tailwind CSS", "Supabase", "REST API"],
+}
+  // {
+  //   company: "Freelance",
+  //   role: "Frontend Developer",
+  //   period: "Jun 2023 – Dec 2023",
+  //   duration: "6 months",
+  //   description:
+  //     "Worked with startups and agencies to deliver responsive, animated landing pages and web apps under tight deadlines.",
+  //   achievements: [
+  //     "Delivered 8 client projects on time",
+  //     "Built e-commerce frontend with cart and checkout",
+  //     "Created design systems from Figma specs",
+  //   ],
+  //   tech: ["React", "Framer Motion", "SCSS", "JavaScript"],
+  // },
+  // {
+  //   company: "ByteBase Labs",
+  //   role: "Junior Frontend Intern",
+  //   period: "Jan 2023 – May 2023",
+  //   duration: "5 months",
+  //   description:
+  //     "Contributed to the company's main SaaS product, fixing bugs and shipping new UI features in a fast-paced agile environment.",
+  //   achievements: [
+  //     "Resolved 30+ UI bugs in production",
+  //     "Built new onboarding flow increasing user activation by 18%",
+  //     "Collaborated with designers in weekly design reviews",
+  //   ],
+  //   tech: ["React", "JavaScript", "Material UI", "REST APIs"],
+  // },
 ];
 
 export const stats = [
