@@ -34,15 +34,15 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24 items-center">
           <div>
             <h2 className="section-animate font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6 sm:mb-8" style={{ transitionDelay: "100ms" }}>
-              Turning ideas into{" "}
-              <span className="text-accent">living, breathing</span>{" "}
-              interfaces.
+              I build{" "}
+              <span className="text-accent">fast & scalable</span>{" "}
+              web interfaces.
             </h2>
             <p className="section-animate font-body text-muted text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6" style={{ transitionDelay: "200ms" }}>
               {personalInfo.bio}
             </p>
             <p className="section-animate font-body text-muted text-sm sm:text-base leading-relaxed mb-8 sm:mb-10" style={{ transitionDelay: "250ms" }}>
-              When I'm not coding, I'm studying design systems, contributing to open source, or exploring the latest web animation techniques.
+             When I'm not coding, I’m learning how to build better full stack systems and improve performance, scalability, and architecture.
             </p>
             <div className="section-animate flex flex-col gap-3" style={{ transitionDelay: "300ms" }}>
               {[{ icon: MapPin, text: personalInfo.location }, { icon: Mail, text: personalInfo.email }, { icon: Calendar, text: "2 Years Experience" }].map(({ icon: Icon, text }) => (
