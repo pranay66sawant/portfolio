@@ -41,7 +41,7 @@ export const projects = [
   category: "Full Stack",
   image: "/projects/pune.png",
   github: "https://github.com",
-  live: "https://pune-tourism.vercel.app/",
+  live: "",
   featured: true,
   year: "Ongoing",
 },
