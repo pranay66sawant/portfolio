@@ -38,7 +38,7 @@ export const projects = [
   description:
     "A full stack tourism platform showcasing Pune’s destinations with dynamic content, booking functionality, and API-driven data handling, optimized for a smooth and responsive user experience.",
   tech: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Supabase","REST API"],
-  category: "Full Stack",
+  category: "Full Stack Web Application",
   image: "/projects/pune.png",
   github: "https://github.com",
   live: "",
@@ -51,7 +51,7 @@ export const projects = [
   description:
     "A modern brand-focused website designed to showcase creative strategy, design thinking, and communication. Features smooth animations, responsive UI, and dynamic content handling for an engaging user experience.",
   tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-  category: "Full Stack",
+  category: "Frontend",
   image: "/projects/botree.png",
   github: "https://github.com",
   live: "https://botree.in/",
@@ -64,7 +64,7 @@ export const projects = [
   description:
     "A modern event-focused website showcasing experiences, event details, and seamless user interaction. Designed with a strong emphasis on visual appeal, responsive layouts, and smooth navigation for an engaging user experience.",
   tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-  category: "Full Stack",
+  category: "Frontend",
   image: "/projects/liveitup.png",
   github: "https://github.com",
   live: "https://liveitup.in/",
@@ -88,9 +88,9 @@ export const projects = [
 
 export const experience = [
  {
-  company: "PixelForge Studio",
+  company: "Botree Communications Private Limited",
   role: "Frontend Developer",
-  period: "Jan 2024 – Present",
+  period: "Aug 2024 – Present",
   duration: "Current",
   description:
     "Frontend Developer specializing in building scalable, high-performance web applications using Next.js and React. Focused on delivering responsive, user-centric interfaces with clean architecture and production-ready code.",

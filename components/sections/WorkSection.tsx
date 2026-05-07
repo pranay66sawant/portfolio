@@ -6,7 +6,7 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const categories = ["All", "Frontend", "Full Stack"];
+const categories = ["All", "Frontend", "Full Stack Web Application"];
 
 export default function WorkSection() {
   const ref = useRef<HTMLElement>(null);
